@@ -8,6 +8,20 @@ main {
         flex-flow: column nowrap;
         justify-content: center;
         align-items: center;
+        color: $header-color;
+        h1 {
+            
+            font-family: $header-font;
+            margin: 0px;
+        }
+
+        p {
+            text-align: center;
+            text-decoration: underline;
+            font-family: $text-font;
+            margin: 0px;
+            padding: 5px;
+        }
     
     }
 }
