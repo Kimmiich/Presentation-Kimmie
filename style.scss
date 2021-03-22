@@ -1,0 +1,24 @@
+/** 
+*Table of content
+*
+*01-Vendor-All vendor related contents.
+*02-Sections-Settings for colors, padding, typography sizes etc.
+*03-Layout-Generic layout for mobile, desktop and print.
+*/
+
+$text-font: 'Roboto', sans-serif;
+$header-font: 'Dancing Script', cursive;
+$text-color: #fa9435ee;
+$header-color: #59b31b;
+$bg-color: #f3ecec;
+$bg2-color: #bdc3c7;
+
+
+@import "./scss/layout/base";
+@import "./scss/vendor/normalize";
+@import "./scss/sections/nav";
+@import "./scss/sections/main";
+@import "./scss/sections/footer";
+
+@media screen and (min-width: 768px) {
+  @import "./scss/layout/desktop";}

@@ -1,0 +1,17 @@
+nav {
+    background-color: $bg-color;
+    
+    ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-evenly;
+        padding: 5px;
+
+        li {
+            text-transform: uppercase;
+            font-family: $text-font;
+            color: $text-color;
+            font-weight: bolder;
+        }
+    }
+}
