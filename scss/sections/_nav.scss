@@ -3,15 +3,19 @@ nav {
     
     ul {
         list-style: none;
+        position: fixed;
         display: flex;
         justify-content: space-evenly;
         padding: 5px;
+        text-align: center;
+        width: 100%;
 
         li {
             text-transform: uppercase;
             font-family: $text-font;
             color: $text-color;
             font-weight: bolder;
+            
         }
     }
 }
