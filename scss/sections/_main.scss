@@ -9,12 +9,11 @@ main {
         align-items: center;
         color: $header-color;
         h1 {
-            
             font-family: $header-font;
             margin: 0px;
         }
 
-        p {
+        .secondTitle {
             text-align: center;
             text-decoration: underline;
             font-family: $text-font;
