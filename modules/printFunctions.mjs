@@ -26,6 +26,13 @@ function printAboutMe(main) {
         <h2>About me</h2>
         <p>I´m 28 years old and live in Norrtälje. Right now I am studying to become a Front-End development with an expected exam in 2022. My goal with the education is to gain new knowledge in a new industry and hopefully find a new career. Something I value in programming is that you get to challenge yourself in every project and that you are constantly learning new things. What I add at work is excellent structure, curiosity and positive energy.</p>
     </article>
+    <article>
+        <h2>Education</h2> 
+          <h4>Medieinstitutet - Front-End Developer, <br>2020-2022</h4> 
+          <p>Ongoing education  inom Front-End. Kurserna innefattar bl.a. JavaScript.</p>
+          <h4>Rodengymnasiet - Handel & Administration, <br> 2009-2012</h4>
+          <p>Education with focus on service and how to run a business</p> 
+    </article>
     </section>`
 )};
 
