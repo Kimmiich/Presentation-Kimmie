@@ -33,19 +33,46 @@ function printAboutMe(main) {
           <h4>Rodengymnasiet - Handel & Administration, <br> 2009-2012</h4>
           <p>Education with focus on service and how to run a business</p> 
     </article>
+    <article>
+    <h2>Skills</h2>
+        <ul>
+            <li>Html & Css</li>
+            <li>Sass</li>
+            <li>Javascript</li>
+            <li>Git & Github</li>
+        </ul>
+    </article>
+    <article>
+        <h2>Employments</h2> 
+          <h4>Lekia Norrtälje, <br>2010-</h4> 
+          <p>On this job I have learned service, economics, structure and so much more.</p> 
+    </article>
     </section>`
 )};
 
 function printPortfolio(main) { 
     main.insertAdjacentHTML("beforeend", `
-    <section id="portfolioPage">
-      <article>
-        <h2>Projects</h2>
-        <img src="" alt="bild repo">
-        <p>beskrivande text för repon, 4 repon på mobilvyn, tanke: en mer knapp?</p>
-      </article>
-    </section>`
-)};
+    <section id="portfolioPage"></section>`);
+ 
+};
+
+//Hämta json fil
+fetch("https://api.github.com/users/kimmiich/repos")
+.then( response => response.json())
+.then(data => {
+console.log(data);
+printRepos(data);
+});
+
+function printRepos(data) {
+
+    let portfolioBox = document.getElementById("portfolioPage");
+        for (let repo in data) {
+            portfolioBox.insertAdjacentHTML("beforeend", `<p><a href="${data[repo].clone_url}">${data[repo].name}</a></p>`);
+        };
+};
+
+
 
 function printContact(main) { 
     main.insertAdjacentHTML("beforeend", `
