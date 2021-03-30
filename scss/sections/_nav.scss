@@ -4,8 +4,10 @@ nav {
     ul {
         list-style: none;
         position: fixed;
+        margin-top: 50px;
         display: flex;
         justify-content: space-evenly;
+        align-items: center;
         padding: 5px;
         text-align: center;
         width: 100%;
@@ -16,7 +18,22 @@ nav {
             font-size: 1.1em;
             color: $text-color;
             font-weight: bolder;
+            transition: all 0.3s linear;
+        }
+
+        li:hover {
+            text-decoration: underline;
+            font-size: 1.3em;
+            color: #dbc0a1;
             
+        }
+
+        #titleLi {
+            font-size: 1.5em;
+        }
+
+        #titleLi:hover{
+            font-size: 1.7em;
         }
     }
 }

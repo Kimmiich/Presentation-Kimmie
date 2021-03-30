@@ -1,25 +1,28 @@
 main {
+    background-color: $bg-color;
     #startPage {
         background: no-repeat center url("/imgs/bgbild2.jpg");
         max-width: 100%;
         height: 100vh;
         display: flex;
         flex-flow: column nowrap;
-        justify-content: center;
         align-items: center;
-        color: $header-color;
-        h1 {
-            font-family: $header-font;
-            margin: 0px;
-        }
+        justify-content: flex-start;
 
-        .secondTitle {
+        .aboutMe {
+            background-color: rgba(252, 252, 252, 0.2);
+            box-shadow: 0px 0px 10px rgba(252, 252, 252, 0.7);
+            border-radius: 10px;
             text-align: center;
-            text-decoration: underline;
-            font-family: $text-font;
-            margin: 0px;
-            padding: 5px;
+            letter-spacing: 0.2px;
+            padding: 10px 15px;
+            margin-top: 140px;
+            font-family: $header-font;
+            color: #695136;
+            font-size: 1.2em;
+            max-width: 400px;
         }
     
     }
+
 }

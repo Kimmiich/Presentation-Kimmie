@@ -13,8 +13,7 @@ main.insertAdjacentHTML("afterbegin", `
 function printProfile(main) { 
     main.insertAdjacentHTML("beforeend", `
     <section id="startPage">
-      <h1 class="secondTitle">Front-end Developer 2022</h1>
-      <p id="aboutMe"> Hi, I'm Kimmie and I've always had a passion for problem solving and structure. With a positive and including attitude a love taking on new challenges in programming and life.</p>
+      <p class="aboutMe"> Hi, My name is Kimmie. I love to explore and learn new things in life and at work. I've always been really good at problem solving and love having structure in everything I do. Follow me on my journey to become a Front-end developer!</p>
       <div id="soMe"></div>
     </section>`
 )};
@@ -23,14 +22,14 @@ function printEducation(main) {
     main.insertAdjacentHTML("beforeend", `
     <section class="educationPage" id="educationPage">
     <article>
-        <h2>Education</h2> 
+        <h2 class="secondTitles">Education</h2> 
           <h4>Medieinstitutet - Front-End Developer, <br>2020-2022</h4> 
           <p>Ongoing education  inom Front-End. Kurserna innefattar bl.a. JavaScript.</p>
           <h4>Rodengymnasiet - Handel & Administration, <br> 2009-2012</h4>
           <p>Education with focus on service and how to run a business</p> 
     </article>
     <article>
-    <h2>Skills</h2>
+    <h2 class="secondTitles">Skills</h2>
         <ul>
             <li>Html & Css</li>
             <li>Sass</li>
@@ -39,7 +38,7 @@ function printEducation(main) {
         </ul>
     </article>
     <article>
-        <h2>Employments</h2> 
+        <h2 class="secondTitles">Employments</h2> 
           <h4>Lekia Norrtälje, <br>2010-</h4> 
           <p>On this job I have learned service, economics, structure and so much more.</p> 
     </article>
@@ -48,7 +47,10 @@ function printEducation(main) {
 
 function printPortfolio(main) { 
     main.insertAdjacentHTML("beforeend", `
-    <section id="portfolioPage"></section>`);
+    <section id="portfolioPage">
+        <h2 class="secondTitles">Portfolio</h2>
+        <p> Here are some of my projects, both ongoing and finished.</p>
+    </section>`);
  
 };
 
@@ -57,7 +59,6 @@ fetch("https://api.github.com/users/kimmiich/repos")
 .then( response => response.json())
 .then(data => {
 console.log(data);
-printRepos(data);
 });
 
 function printRepos(data) {
