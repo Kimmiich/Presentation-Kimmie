@@ -3,9 +3,9 @@ function printNav(main) {
 main.insertAdjacentHTML("afterbegin", `
 <nav>
     <ul>
-        <li id="contactLi">Contact</li>
         <li id="portfolioLi">Portfolio</li>
-        <li id="aboutMeLi">About Me</li>
+        <li id="titleLi">Kimmie Lundgren</li>
+        <li id="aboutMeLi">Education</li>
     </ul>
 </nav>`
 )};
@@ -13,19 +13,15 @@ main.insertAdjacentHTML("afterbegin", `
 function printProfile(main) { 
     main.insertAdjacentHTML("beforeend", `
     <section id="startPage">
-      <h1>Kimmie Lundgren</h1>
-      <p class="secondTitle">Front-end Developer 2022</p>
+      <h1 class="secondTitle">Front-end Developer 2022</h1>
+      <p id="aboutMe"> Hi, I'm Kimmie and I've always had a passion for problem solving and structure. With a positive and including attitude a love taking on new challenges in programming and life.</p>
+      <div id="soMe"></div>
     </section>`
 )};
 
-function printAboutMe(main) { 
+function printEducation(main) { 
     main.insertAdjacentHTML("beforeend", `
-    <aside id="sideLine"></aside>
-    <section id="aboutMePage">
-    <article>
-        <h2>About me</h2>
-        <p>I´m 28 years old and live in Norrtälje. Right now I am studying to become a Front-End development with an expected exam in 2022. My goal with the education is to gain new knowledge in a new industry and hopefully find a new career. Something I value in programming is that you get to challenge yourself in every project and that you are constantly learning new things. What I add at work is excellent structure, curiosity and positive energy.</p>
-    </article>
+    <section class="educationPage" id="educationPage">
     <article>
         <h2>Education</h2> 
           <h4>Medieinstitutet - Front-End Developer, <br>2020-2022</h4> 
@@ -74,20 +70,9 @@ function printRepos(data) {
 
 
 
-function printContact(main) { 
+function printFooter(main) { 
     main.insertAdjacentHTML("beforeend", `
-    <section id="contactPage">
-    <article id="some">
-    </article>
-    <div id="lineBreak"></div>
-    <article>
-        <h2>Contact me</h2>
-        <input id="name" type="text" placeholder="Enter your name"><br>
-        <input id="email" type="email" placeholder="E-mail"><br>
-        <textarea id="message" rows="10" cols="30" placeholder="Write your message here..."></textarea><br>
-        <button id="btn">Send</button>
-    </article> 
-</section>`
+    <footer> Hej då!</footer>`
 )};
 
-export { printNav, printProfile, printAboutMe, printPortfolio, printContact };
+export { printNav, printProfile, printEducation, printPortfolio, printFooter};
