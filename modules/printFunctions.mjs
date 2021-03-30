@@ -14,13 +14,17 @@ function printProfile(main) {
     main.insertAdjacentHTML("beforeend", `
     <section id="startPage">
       <p class="aboutMe"> Hi, My name is Kimmie. I love to explore and learn new things in life and at work. I've always been really good at problem solving and love having structure in everything I do. Follow me on my journey to become a Front-end developer!</p>
-      <div id="soMe"></div>
+      <div class="soMe">
+        <a href="https://linkedin.com/in/kimmie-lundgren-620401201/"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/Kimmiich"><i class="fab fa-github"></i></a>
+        <a href="mailto:kimmielundgren@live.se"><i class="fas fa-envelope"></i></a>
+        </div>
     </section>`
 )};
 
 function printEducation(main) { 
     main.insertAdjacentHTML("beforeend", `
-    <section class="educationPage" id="educationPage">
+    <section id="educationPage">
     <article>
         <h2 class="secondTitles">Education</h2> 
           <h4>Medieinstitutet - Front-End Developer, <br>2020-2022</h4> 
