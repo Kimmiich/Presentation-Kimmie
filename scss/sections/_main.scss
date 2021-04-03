@@ -43,17 +43,46 @@ main {
 
     .secondTitles {
         font-family: $text-font;
+        text-transform: uppercase;
+        color: $text-color;
+        padding-top: 100px;
+    }
+
+    .thirdTitles {
+        font-family: $text-font;
+        text-transform: uppercase;
         color: $text-color;
     }
 
-
-
     #educationPage {
-        height: 100vh;
+        min-height: 100vh;
+        font-family: $header-font;
     }
 
     #portfolioPage {
-        height: 100vh;
+        box-shadow: -5px -5px 10px rgb(252, 252, 252);
+        font-family: $header-font;
+        min-height: 100vh;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+
+        .githubBox {
+            max-width: 350px;
+            
+
+            .imageBox {
+                height: 200px;
+                overflow: hidden;
+
+                img {
+                    width: 350px;
+                    
+
+                }
+            }  
+        }
+
     }
 
 }

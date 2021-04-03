@@ -1,10 +1,21 @@
 import {printNav, printProfile, printEducation, printPortfolio, printFooter } from "./modules/printFunctions.mjs";
+import {printRepo} from "./modules/portfolio.mjs";
 
 const main = document.querySelector("main");
 
 printNav(main);
 printProfile(main);
 printPortfolio(main);
+
+//Hämta json fil
+fetch("https://api.github.com/users/kimmiich/repos")
+.then( response => response.json())
+.then(data => {
+    console.log(data);
+    printRepo(data);
+
+});
+
 printEducation(main);
 printFooter(main);
 

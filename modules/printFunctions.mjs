@@ -33,7 +33,7 @@ function printEducation(main) {
           <p>Education with focus on service and how to run a business</p> 
     </article>
     <article>
-    <h2 class="secondTitles">Skills</h2>
+    <h2 class="thirdTitles">Skills</h2>
         <ul>
             <li>Html & Css</li>
             <li>Sass</li>
@@ -42,7 +42,7 @@ function printEducation(main) {
         </ul>
     </article>
     <article>
-        <h2 class="secondTitles">Employments</h2> 
+        <h2 class="thirdTitles">Employments</h2> 
           <h4>Lekia Norrtälje, <br>2010-</h4> 
           <p>On this job I have learned service, economics, structure and so much more.</p> 
     </article>
@@ -52,28 +52,11 @@ function printEducation(main) {
 function printPortfolio(main) { 
     main.insertAdjacentHTML("beforeend", `
     <section id="portfolioPage">
-        <h2 class="secondTitles">Portfolio</h2>
+        <h2 class="secondTitles">Projects of mine</h2>
         <p> Here are some of my projects, both ongoing and finished.</p>
     </section>`);
  
 };
-
-//Hämta json fil
-fetch("https://api.github.com/users/kimmiich/repos")
-.then( response => response.json())
-.then(data => {
-console.log(data);
-});
-
-function printRepos(data) {
-
-    let portfolioBox = document.getElementById("portfolioPage");
-        for (let repo in data) {
-            portfolioBox.insertAdjacentHTML("beforeend", `<p><a href="${data[repo].clone_url}">${data[repo].name}</a></p>`);
-        };
-};
-
-
 
 function printFooter(main) { 
     main.insertAdjacentHTML("beforeend", `
