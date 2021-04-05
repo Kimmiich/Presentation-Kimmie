@@ -60,7 +60,7 @@ function printPortfolio(main) {
 
 function printFooter(main) { 
     main.insertAdjacentHTML("beforeend", `
-    <footer> Hej då!</footer>`
+    <footer><i class="fas fa-chevron-circle-up"></i></footer>`
 )};
 
 export { printNav, printProfile, printEducation, printPortfolio, printFooter};

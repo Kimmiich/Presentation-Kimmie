@@ -1,5 +1,6 @@
 main {
     background-color: $bg-color;
+    
     #startPage {
         background: no-repeat center url("/imgs/bgbild2.jpg");
         max-width: 100%;
@@ -57,10 +58,15 @@ main {
     #educationPage {
         min-height: 100vh;
         font-family: $header-font;
+        
+
     }
 
     #portfolioPage {
-        box-shadow: -5px -5px 10px rgb(252, 252, 252);
+        box-shadow: -5px -5px 10px rgb(243, 243, 243);
+        background-color: rgba(228, 227, 227, 0.637);
+    
+
         font-family: $header-font;
         min-height: 100vh;
         display: flex;
@@ -70,17 +76,38 @@ main {
         .githubBox {
             max-width: 350px;
             
-
             .imageBox {
                 height: 200px;
-                overflow: hidden;
 
                 img {
-                    width: 350px;
+                    max-height: 100%;
+                    max-width: 100%;
+                    border-radius: 20px;
                     
-
                 }
-            }  
+
+                figcaption {
+                    border-radius: 10px;
+                    margin: auto;
+                    max-width: 120px;
+                    padding: 10px;
+                    text-align: center;
+                    position: relative;
+                    top: -120px;
+                    z-index: 5;
+                    display: none;
+                }
+            } 
+            
+            .imageBox:hover {
+
+                figcaption {
+                    display: block;
+                    background-color: rgba(240, 128, 128, 0.507);
+                    
+                    
+                }
+            }
         }
 
     }
