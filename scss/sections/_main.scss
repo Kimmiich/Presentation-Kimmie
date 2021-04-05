@@ -1,5 +1,5 @@
 main {
-    background-color: $bg-color;
+    background-color: rgba(228, 227, 227, 0.637);
     
     #startPage {
         background: no-repeat center url("/imgs/bgbild2.jpg");
@@ -63,9 +63,7 @@ main {
     }
 
     #portfolioPage {
-        box-shadow: -5px -5px 10px rgb(243, 243, 243);
-        background-color: rgba(228, 227, 227, 0.637);
-    
+        box-shadow: -5px -5px 10px rgb(243, 243, 243);    
 
         font-family: $header-font;
         min-height: 100vh;
@@ -74,40 +72,36 @@ main {
         align-items: center;
 
         .githubBox {
-            max-width: 350px;
+            max-width: 100%;
             
             .imageBox {
-                height: 200px;
-
-                img {
-                    max-height: 100%;
-                    max-width: 100%;
-                    border-radius: 20px;
-                    
+                width: 350px;
+                background-color: #ad8960a2;
+                box-shadow: 0px 0px 10px rgba(252, 252, 252, 0.7);
+                border-radius: 10px;
+                padding: 10px;
+                display: flex;
+                flex-flow: column nowrap;
+                justify-content: center;
+                align-items: center;
+                transition: transform 0.5s linear;
+                &:hover {
+                    transform: translateY(-7px);
                 }
 
+                img,
                 figcaption {
-                    border-radius: 10px;
-                    margin: auto;
-                    max-width: 120px;
-                    padding: 10px;
+                    box-shadow: 0px 0px 10px rgba(252, 252, 252, 0.596);
+                    background-color: rgba(255, 255, 255, 0.637);
+                    max-height: 70%;
+                    max-width: 70%;
                     text-align: center;
-                    position: relative;
-                    top: -120px;
-                    z-index: 5;
-                    display: none;
+                    border-radius: 5px;
+                    padding: 2px;
+                    letter-spacing: 0.2px;
                 }
             } 
             
-            .imageBox:hover {
-
-                figcaption {
-                    display: block;
-                    background-color: rgba(240, 128, 128, 0.507);
-                    
-                    
-                }
-            }
         }
 
     }
