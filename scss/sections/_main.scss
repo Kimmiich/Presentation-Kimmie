@@ -64,29 +64,53 @@ main {
 
     #portfolioPage {
         box-shadow: -5px -5px 10px rgb(243, 243, 243);    
-
         font-family: $header-font;
         min-height: 100vh;
         display: flex;
         flex-flow: column nowrap;
         align-items: center;
 
+        .portfolioText {
+            color: #695136;
+            max-width: 350px;
+            font-weight: bold;
+        }
+        a {
+            text-decoration: none;
+        }
+
+        .extraGitLink {
+            color: #ad8960;
+            transition: all 0.5s linear;
+
+            &:hover {
+                text-decoration: underline;
+                font-size: 1.1em;
+                color: #806342;
+                text-shadow: 0px 0px 10px $text-color;
+            }
+        }
         .githubBox {
             max-width: 100%;
             
+            
             .imageBox {
                 width: 350px;
-                background-color: #ad8960a2;
-                box-shadow: 0px 0px 10px rgba(252, 252, 252, 0.7);
+                background-color: #656b3d9f;
+                box-shadow: 0px 0px 10px #6c733d9f;
                 border-radius: 10px;
                 padding: 10px;
                 display: flex;
                 flex-flow: column nowrap;
                 justify-content: center;
                 align-items: center;
-                transition: transform 0.5s linear;
+                transition: all 0.5s linear;
                 &:hover {
-                    transform: translateY(-7px);
+                    transform: scale(1.05);
+                    img, figcaption {
+                        box-shadow: 0px 0px 1px rgba(252, 252, 252, 0.596);
+                        text-decoration: underline;
+                    }
                 }
 
                 img,
@@ -96,9 +120,11 @@ main {
                     max-height: 70%;
                     max-width: 70%;
                     text-align: center;
-                    border-radius: 5px;
-                    padding: 2px;
+                    padding: 4px;
                     letter-spacing: 0.2px;
+                    color: #ad8960;
+
+                    
                 }
             } 
             

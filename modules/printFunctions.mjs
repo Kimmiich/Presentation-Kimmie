@@ -53,7 +53,7 @@ function printPortfolio(main) {
     main.insertAdjacentHTML("beforeend", `
     <section id="portfolioPage">
         <h2 class="secondTitles">Projects of mine</h2>
-        <p> Here are some of my projects, both ongoing and finished.</p>
+        <p class="portfolioText"> Here you can see some of my projects, both ongoing and finished. You can find even more code on my <a target='_blank' class="extraGitLink" href= "https://github.com/Kimmiich">github profile!</a></p>
     </section>`);
  
 };
