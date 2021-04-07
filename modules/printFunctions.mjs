@@ -42,11 +42,11 @@ function printEducation(main) {
     <article class="contentBox">
     <h2 class="thirdTitles">Skills</h2>
         <ul class="skills">
-            <li><i class="fab fa-html5"></i> - Html</li>
-            <li><i class="fab fa-css3-alt"></i> - Css</li>
-            <li><i class="fab fa-sass"></i> - Sass</li>
-            <li><i class="fab fa-js-square"></i> - Javascript</li>
-            <li><i class="fab fa-github"></i> - Git & Github</li>
+            <li><i class="fab fa-html5"></i> <br> Html</li>
+            <li><i class="fab fa-sass"></i></li>
+            <li><i class="fab fa-css3-alt"></i> <br> Css</li>
+            <li><i class="fab fa-js-square"></i> <br> Javascript</li>
+            <li><i class="fab fa-github"></i> <br> Git & Github</li>
         </ul>
     </article>
     <article class="contentBox">

@@ -44,7 +44,7 @@ main {
     font-family: $text-font;
     text-transform: uppercase;
     color: $text-color;
-    padding-top: 100px;
+    padding-top: 70px;
   }
 
   #portfolioPage {
@@ -115,10 +115,12 @@ main {
   #educationPage {
     min-height: 100vh;
     font-family: $header-font;
+    color: #695136;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
+    padding-bottom: 20 px;
 
     .thirdTitles {
       font-family: $text-font;
@@ -127,7 +129,39 @@ main {
     }
 
     .contentBox {
-      width: 70%;
+      width: 350px;
+      margin-bottom: 0px;
+
+      h4 {
+        margin-bottom: 2px;
+      }
+      p {
+        margin: 5px 0px;
+        font-size: 0.9em;
+      }
+    }
+
+    ul {
+      list-style: none;
+      display: flex;
+      flex-flow: row wrap;
+
+      li {
+        padding: 10px 20px;
+        text-align: center;
+
+        .fab {
+          color: #ad8960;
+          font-size: 2.8em;
+          transition: all 0.2s linear;
+
+          &:hover {
+            transform: scale(1.1);
+            color: #695136;
+            text-shadow: 3px 3px 10px $text-color;
+          }
+        }
+      }
     }
   }
 }
