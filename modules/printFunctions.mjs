@@ -32,26 +32,27 @@ function printEducation(main) {
     "beforeend",
     `
     <section id="educationPage">
-    <article>
+    <article class="contentBox">
         <h2 class="secondTitles">Education</h2> 
           <h4>Medieinstitutet - Front-End Developer, <br>2020-2022</h4> 
-          <p>Ongoing education  inom Front-End. Kurserna innefattar bl.a. JavaScript.</p>
+          <p>Ongoing education.</p>
           <h4>Rodengymnasiet - Handel & Administration, <br> 2009-2012</h4>
-          <p>Education with focus on service and how to run a business</p> 
+          <p>Focus on service, business and turism.</p> 
     </article>
-    <article>
+    <article class="contentBox">
     <h2 class="thirdTitles">Skills</h2>
-        <ul>
-            <li>Html & Css</li>
-            <li>Sass</li>
-            <li>Javascript</li>
-            <li>Git & Github</li>
+        <ul class="skills">
+            <li><i class="fab fa-html5"></i> - Html</li>
+            <li><i class="fab fa-css3-alt"></i> - Css</li>
+            <li><i class="fab fa-sass"></i> - Sass</li>
+            <li><i class="fab fa-js-square"></i> - Javascript</li>
+            <li><i class="fab fa-github"></i> - Git & Github</li>
         </ul>
     </article>
-    <article>
-        <h2 class="thirdTitles">Employments</h2> 
+    <article class="contentBox">
+        <h2 class="thirdTitles">Experience</h2> 
           <h4>Lekia Norrtälje, <br>2010-</h4> 
-          <p>On this job I have learned service, economics, structure and so much more.</p> 
+          <p>Worked with sales and purchase. Also gained a lot of knowledge in communication and visual presentation.</p> 
     </article>
     </section>`
   );
