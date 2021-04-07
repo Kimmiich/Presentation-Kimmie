@@ -1,6 +1,7 @@
-
-function printNav(main) { 
-main.insertAdjacentHTML("afterbegin", `
+function printNav(main) {
+  main.insertAdjacentHTML(
+    "afterbegin",
+    `
 <nav>
     <ul>
         <li id="portfolioLi">Portfolio</li>
@@ -8,10 +9,13 @@ main.insertAdjacentHTML("afterbegin", `
         <li id="aboutMeLi">Education</li>
     </ul>
 </nav>`
-)};
+  );
+}
 
-function printProfile(main) { 
-    main.insertAdjacentHTML("beforeend", `
+function printProfile(main) {
+  main.insertAdjacentHTML(
+    "beforeend",
+    `
     <section id="startPage">
       <p class="aboutMe"> Hi, My name is Kimmie. I love to explore and learn new things in life and at work. I've always been really good at problem solving and love having structure in everything I do. Follow me on my journey to become a Front-end developer!</p>
       <div class="soMe">
@@ -20,10 +24,13 @@ function printProfile(main) {
         <a href="mailto:kimmielundgren@live.se"><i class="fas fa-envelope"></i></a>
         </div>
     </section>`
-)};
+  );
+}
 
-function printEducation(main) { 
-    main.insertAdjacentHTML("beforeend", `
+function printEducation(main) {
+  main.insertAdjacentHTML(
+    "beforeend",
+    `
     <section id="educationPage">
     <article>
         <h2 class="secondTitles">Education</h2> 
@@ -47,20 +54,26 @@ function printEducation(main) {
           <p>On this job I have learned service, economics, structure and so much more.</p> 
     </article>
     </section>`
-)};
+  );
+}
 
-function printPortfolio(main) { 
-    main.insertAdjacentHTML("beforeend", `
+function printPortfolio(main) {
+  main.insertAdjacentHTML(
+    "beforeend",
+    `
     <section id="portfolioPage">
         <h2 class="secondTitles">Projects of mine</h2>
-        <p class="portfolioText"> Here you can see some of my projects, both ongoing and finished. You can find even more code on my <a target='_blank' class="extraGitLink" href= "https://github.com/Kimmiich">github profile!</a></p>
-    </section>`);
- 
-};
+        <p class="portfolioText"> Some of my projects, both ongoing and finished. You can find even more code on my <a target='_blank' class="extraGitLink" href= "https://github.com/Kimmiich">github profile!</a></p>
+    </section>`
+  );
+}
 
-function printFooter(main) { 
-    main.insertAdjacentHTML("beforeend", `
-    <footer><i class="fas fa-chevron-circle-up"></i></footer>`
-)};
+function printFooter(main) {
+  main.insertAdjacentHTML(
+    "beforeend",
+    `
+    <footer><a target='_blank' class="toTop" href= "#"><i class="fas fa-chevron-circle-up"></i></a></footer>`
+  );
+}
 
-export { printNav, printProfile, printEducation, printPortfolio, printFooter};
+export { printNav, printProfile, printEducation, printPortfolio, printFooter };
