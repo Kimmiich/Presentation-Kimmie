@@ -2,33 +2,75 @@ html,
 body {
   box-sizing: border-box;
   margin: 0px;
-  background-color: $bg-color;
-  main {
-    background-color: rgba(228, 227, 227, 0.637);
+  color: white;
 
-    #startPage {
-      background: no-repeat center url('/imgs/background.jpg');
-      max-width: 100%;
-      height: 100vh;
+  main {
+    background: no-repeat center url('/imgs/background.jpg');
+    max-width: 100%;
+    height: 100vh;
+    font-family: $text-font;
+    display: flex;
+    flex-flow: column nowrap;
+
+    header {
       display: flex;
       flex-flow: column nowrap;
       align-items: center;
-      justify-content: space-around;
-
-      .fab,
-      .fas {
-        color: #ad8960;
-        padding: 20px;
-        font-size: 2.5em;
-        transition: all 0.2s linear;
+      justify-content: end;
+      height: 68%;
+      .text {
+        z-index: 5;
+        text-align: center;
+        .workTitle {
+          font-size: 2.9375em;
+          font-weight: normal;
+          margin: 0px;
+          position: relative;
+          bottom: -5px;
+        }
+        .name {
+          font-weight: normal;
+          font-family: $header-font;
+          font-size: 6.25em;
+          text-shadow: $text-color 2px 2px;
+          margin: 0px;
+        }
+        .phrase {
+          font-size: 1.3125em;
+          margin: 10px;
+        }
       }
+      .img {
+        position: absolute;
+        top: 60px;
+        z-index: 2;
+        svg {
+          width: 100%;
+        }
+      }
+    }
 
-      .fab:hover,
-      .fas:hover {
-        padding: 13px;
-        color: #695136;
-        text-shadow: 3px 3px 10px $text-color;
-        font-size: 3em;
+    footer {
+      height: 25%;
+      z-index: 5;
+      .soMe {
+        display: flex;
+        justify-content: center;
+        flex-flow: row nowrap;
+
+        .fab,
+        .fas {
+          color: #ad8960;
+          padding: 20px;
+          font-size: 2.5em;
+          transition: all 0.2s linear;
+        }
+
+        .fab:hover,
+        .fas:hover {
+          color: #695136;
+          text-shadow: 3px 3px 10px $text-color;
+        }
       }
     }
   }
