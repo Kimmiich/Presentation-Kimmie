@@ -12,12 +12,9 @@ $text-color: #dbc0a1;
 $header-color: #e2e2e2e8;
 $bg-color: rgba(252, 252, 252, 0.863);
 
-
-@import "./scss/layout/base";
-@import "./scss/vendor/normalize";
-@import "./scss/sections/nav";
-@import "./scss/sections/main";
-@import "./scss/sections/footer";
+@import './scss/layout/base';
+@import './scss/vendor/normalize';
 
 @media screen and (min-width: 768px) {
-  @import "./scss/layout/desktop";}
+  @import './scss/layout/desktop';
+}
